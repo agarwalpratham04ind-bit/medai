@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Call Riley</title>
+    <script
+      src="https://cdn.jsdelivr.net/gh/VapiAI/html-script-tag@latest/dist/assets/index.js"
+      defer
+      async
+    ></script>
+  </head>
+  <body>
+    <h1>Talk to Riley</h1>
+
+    <script>
+      window.addEventListener('load', () => {
+        window.vapiSDK.run({
+          apiKey: 'YOUR_PUBLIC_VAPI_KEY',
+          assistant: '4ffb54f9-fe5d-46c4-996a-36a2536d0541',
+          config: {
+            position: 'bottom-right'
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
